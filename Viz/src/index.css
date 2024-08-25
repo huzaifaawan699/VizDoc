@@ -1,3 +1,60 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Add these styles to your CSS file */
+.sidebar-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.footer-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.sidebar-content {
+  margin-top: 1rem;
+}
+
+.footer-content {
+  margin-top: 1rem;
+}
+/* Add these styles to your CSS file */
+.sidebar-image,
+.footer-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.sidebar-image:hover,
+.footer-image:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.sidebar-content {
+  margin-top: 1rem;
+}
+
+.footer-content {
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .sidebar-image,
+  .footer-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar-content,
+  .footer-content {
+    font-size: 0.875rem;
+  }
+}
